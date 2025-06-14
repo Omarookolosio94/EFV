@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap");
+
+@import "tailwindcss";
+@tailwind utilities;
+
+@plugin "@iconify/tailwind4" {
+  prefixes: solar, carbon;
+}
+
+@layer components {
+  .bg-home {
+    background: url("./assets/shop_online.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+@theme {
+  --font-inter: "Inter", "sans-serif";
+
+  --color-black: #1f2b23;
+  --color-white: #ffffff;
+
+  --color-secondary-light: #f8d1d2;
+  --color-secondary: #e35b5f;
+  --color-secondary-dark: #b04245;
+
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-border: #dddddd;
+
+  --color-primary: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #424144; /* Track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-white-light); /* Scrollbar thumb */
+  border: 3px solid #424144; /* Same as track background to create spacing illusion */
+  border-radius: 9999px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+body {
+  color: #1f2b23;
+  background-color: var(--color-white);
+  font-family: var(--font-inter) !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+a {
+  @apply hover:cursor-pointer;
+}
+
+.link {
+  @apply !m-0 w-auto !p-0 hover:border-b;
+  line-height: 11px !important;
+}
+
+.link.active {
+  @apply !border-b;
+}
+
+button {
+  @apply hover:cursor-pointer;
+}
+
+.btn {
+  @apply flex cursor-pointer items-center justify-center gap-2 overflow-hidden border border-[#424144] bg-[#424144] px-[16px] py-[14px] text-xs text-white shadow-sm transition duration-300 ease-in-out outline-none hover:bg-transparent hover:text-black disabled:cursor-not-allowed;
+}
+
+@keyframes progress-bar-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.animate-progress-bar {
+  animation: progress-bar-animation 1.5s ease-in-out infinite;
+}
