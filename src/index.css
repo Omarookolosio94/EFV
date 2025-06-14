@@ -9,7 +9,7 @@
 
 @layer components {
   .bg-home {
-    background: url("./assets/shop_online.jpg") no-repeat;
+    background: url("./assets/towers.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
