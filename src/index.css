@@ -52,7 +52,6 @@
 }
 
 body {
-  color: #1f2b23;
   background-color: var(--color-white);
   font-family: var(--font-inter) !important;
   font-optical-sizing: auto;

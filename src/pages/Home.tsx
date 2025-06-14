@@ -17,9 +17,7 @@ export default function Home() {
           {data ? (
             <div className="flex min-h-[80vh] items-center justify-center">
               <div className="text-center">
-                <h1 className="mb-8 text-base font-medium text-white">
-                  Select Tower
-                </h1>
+                <h1 className="mb-8 font-medium text-white">Select Tower</h1>
                 <div className="flex flex-wrap justify-center gap-8">
                   {data.map((tower) => (
                     <Link key={tower.id} to={`/${tower.slug}`}>

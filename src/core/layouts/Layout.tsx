@@ -4,7 +4,7 @@ import logo from "../../assets/logo_full.png";
 export default function Layout() {
   return (
     <div className="bg-home relative min-h-screen w-full">
-      <div className="absolute inset-0 z-0 bg-black/60"></div>
+      <div className="absolute inset-0 z-0 bg-black/70"></div>
 
       <div className="relative z-10 min-h-[60vh]">
         <nav className="w-full bg-white py-3 text-center">
