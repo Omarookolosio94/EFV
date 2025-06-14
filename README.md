@@ -17,7 +17,6 @@ Users can explore Towers → Floors → Units with smooth navigation, state cach
 - 🌍 Explore 3 predefined towers with 10–15 floors per tower.
 - 🏠 Each floor contains 3–4 apartment units.
 - 📊 Unit details include area, unit type, room count, and layout image.
-- ⚡ Fast client-side routing using React Router v6.
 - 🛆 Mock data generated dynamically using `faker.js`.
 - 📆 State caching using localStorage to mimic API request caching.
 - 🎨 Responsive design fully powered by Tailwind CSS.
